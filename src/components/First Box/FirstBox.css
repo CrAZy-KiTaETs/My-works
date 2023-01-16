@@ -1,0 +1,207 @@
+.firstBox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -100%;
+  overflow: hidden;
+  transition: 0.5s;
+  background-color: #202124;
+}
+
+.firstBoxUp {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -200%;
+  transition: 0.5s;
+}
+
+.active {
+  position: relative;
+  top: 0;
+  transition: 0.5s;
+}
+
+.header {
+  width: 100%;
+  height: 70%;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  position: relative;
+}
+
+.greeting {
+  width: 0ch;
+  position: relative;
+  color: #7fa6d8;
+  text-shadow: 0 0 10px black;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white;
+  animation: inputLine 1s step-end infinite, greeting 7s steps(51) 2s infinite;
+  z-index: 1;
+}
+
+.console::after {
+  content: ".log";
+  color: #e3e7f4;
+}
+
+.attribute {
+  color: #92dee1;
+  font-size: 54px;
+}
+
+.attribute::after {
+  content: ")";
+  color: #cc6bcf;
+}
+.attribute::before {
+  content: "(";
+  color: #cc6bcf;
+}
+
+@keyframes greeting {
+  0% {
+    width: 0ch;
+  }
+  40% {
+    width: 43.5ch;
+  }
+  100% {
+    width: 43.5ch;
+  }
+}
+
+@keyframes inputLine {
+  0% {
+    border-color: white;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: white;
+  }
+}
+
+.browserConsole {
+  width: 100%;
+  height: 30%;
+  background-color: #202124;
+  position: relative;
+  z-index: 2;
+}
+
+.consoleimg {
+  width: 100%;
+}
+
+.wrapper {
+  padding: 0 10px;
+  position: relative;
+  color: #d9d9d9;
+  font-size: large;
+}
+
+.triangle::after,
+.triangle::before {
+  content: "";
+  background-color: #2e5ca9;
+  width: 6px;
+  height: 1px;
+  position: absolute;
+}
+
+.triangle::after {
+  top: 10px;
+  rotate: 35deg;
+}
+
+.triangle::before {
+  top: 13px;
+  rotate: -35deg;
+}
+
+/* кнопки навигации */
+.topWrapper {
+  position: absolute;
+  top: 10px;
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+
+  justify-content: center;
+}
+
+.bottomWrapper {
+  width: 100%;
+  height: 50px;
+  bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  z-index: 5;
+}
+
+@media (max-width: 1450px) {
+  .greeting {
+    font-size: 28px;
+  }
+  .attribute {
+    font-size: 28px;
+  }
+  @keyframes greeting {
+    0% {
+      width: 0ch;
+    }
+    40% {
+      width: 48ch;
+    }
+    100% {
+      width: 48ch;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .wrapper {
+    font-size: 14px;
+  }
+  .absBtn {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 750px) {
+  .greeting {
+    font-size: 18px;
+  }
+  .attribute {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    height: 55%;
+  }
+  .browserConsole {
+    height: 45%;
+  }
+  .greeting {
+    font-size: 12px;
+  }
+  .attribute {
+    font-size: 12px;
+  }
+}

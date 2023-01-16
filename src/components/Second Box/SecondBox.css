@@ -1,0 +1,76 @@
+.secondBox {
+  background-color: rgb(27, 27, 27);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.up {
+  position: absolute;
+  top: -100%;
+  transition: 0.5s;
+}
+
+.active {
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.down {
+  top: 100%;
+  transition: 0.5s;
+}
+
+.prevBtn {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  width: 70px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.prevBtn:hover {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.nextBtn {
+  position: absolute;
+  right: 0;
+  width: 70px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.nextBtn:hover {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0.4654236694677871) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+#leftArrow {
+  rotate: 180deg;
+}
+
+@media (max-width: 1024px) {
+  .prevBtn:hover {
+    background: none;
+  }
+  .nextBtn:hover {
+    background: none;
+  }
+}

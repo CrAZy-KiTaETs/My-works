@@ -1,0 +1,200 @@
+.thirdBox {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 100%;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+}
+
+.thirdBoxDown {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 200%;
+  transition: 0.5s;
+}
+
+.active {
+  top: 0;
+  transition: 0.5s;
+}
+
+.background-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-image: url(../images/back.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.mainWindow {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.character {
+  max-height: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.askme {
+  margin-bottom: 50px;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+}
+
+.askBtn {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: #147979;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.askBtn:hover {
+  width: 240px;
+  transition: 0.1s;
+}
+
+.askBtn:focus {
+  width: 240px;
+  transition: 0.1s;
+}
+
+.dialogsWindow {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  z-index: 3;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.dialogsWindow::before {
+  width: 10%;
+  height: 100%;
+  background: rgb(35, 36, 36);
+  background: linear-gradient(
+    270deg,
+    rgba(35, 36, 36, 0.8295693277310925) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  left: 0px;
+  position: absolute;
+  content: "";
+}
+
+.dialogsWindow::after {
+  width: 10%;
+  height: 100%;
+  background-color: red;
+  right: 0px;
+  position: absolute;
+  content: "";
+  background: rgb(35, 36, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(35, 36, 36, 0.8295693277310925) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.myName {
+  position: absolute;
+  width: 250px;
+  height: 35px;
+  left: 10%;
+  top: -35px;
+  font-size: 32px;
+  color: #e3e7f4;
+  z-index: 1;
+  text-align: center;
+  background-image: url("../images/nameholder.png");
+  background-size: cover;
+}
+
+.text {
+  color: #e3e7f4;
+  font-size: 18px;
+  height: 100%;
+  width: 80%;
+  position: absolute;
+  background-color: #232424d0;
+  padding-top: 10px;
+}
+
+.meme {
+  height: inherit;
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .askme {
+    width: 230px;
+  }
+  .askBtn:focus {
+    width: 220px;
+  }
+  .myName {
+    width: 200px;
+    font-size: 28px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .character {
+    height: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainWindow {
+    height: 70%;
+  }
+  .dialogsWindow {
+    height: 30%;
+  }
+  .dialogsWindow::before {
+    background: none;
+  }
+  .dialogsWindow::after {
+    background: none;
+  }
+  .askBtn {
+    width: 200px;
+    font-size: 12px;
+  }
+  .askBtn:focus {
+    width: 190px;
+  }
+  .myName {
+    width: 150px;
+    height: 27px;
+    top: -27px;
+    font-size: 22px;
+    background-size: contain;
+    left: 2px;
+  }
+  .text {
+    width: 100%;
+    padding: 0px;
+  }
+}

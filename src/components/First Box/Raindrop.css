@@ -1,0 +1,180 @@
+.raindrop {
+  position: absolute;
+  top: -15%;
+  font-size: 20px;
+  height: 20px;
+  animation: rain 5s linear infinite;
+  z-index: 0;
+}
+
+#div {
+  top: -100px;
+  left: 200px;
+  color: #7fa6d8;
+  rotate: -15deg;
+}
+
+#div2 {
+  animation-delay: 0.9s;
+  color: #7fa6d8;
+  right: 325px;
+  rotate: 35deg;
+}
+
+#div::before,
+#div2::before {
+  content: "<";
+}
+
+#div::after,
+#div2::after {
+  content: ">";
+}
+
+#if {
+  color: #7978d5;
+  left: 45%;
+  rotate: 5deg;
+  animation-delay: 1.5s;
+}
+
+#if::after {
+  content: "()";
+}
+
+#const {
+  color: #7978d5;
+  right: 25%;
+  rotate: 76deg;
+  animation-delay: 1.7s;
+}
+
+#react {
+  color: #7978d5;
+  right: 7%;
+  rotate: -8deg;
+  animation-delay: 3.6s;
+}
+
+#function {
+  color: #7978d5;
+  right: 32%;
+  animation-delay: 2.5s;
+  rotate: -55deg;
+}
+
+#id {
+  color: #92dee1;
+  rotate: -80deg;
+  animation-delay: 1.4s;
+  left: 1%;
+}
+
+#id::before {
+  content: "id";
+  color: #cc6bcf;
+}
+
+#import {
+  color: #92dee1;
+  right: 40%;
+  rotate: 23deg;
+  animation-delay: 5s;
+}
+
+#import::before {
+  content: "import ";
+  color: #7978d5;
+}
+
+#useState {
+  color: #e3e7f4;
+  left: 30%;
+  animation-delay: 4s;
+  rotate: 5deg;
+}
+
+#useState::after {
+  content: "()";
+  color: #cc6bcf;
+}
+
+#return {
+  color: #7978d5;
+  left: 15%;
+  animation-delay: 3s;
+  rotate: 60deg;
+}
+
+#return::after {
+  content: " null";
+  color: #cc6bcf;
+}
+
+#leti {
+  color: #7fa6d8;
+  animation-delay: 3.1s;
+  rotate: -15deg;
+  left: 50%;
+}
+
+#leti::before {
+  content: "let ";
+  color: #7978d5;
+}
+
+#leti::after {
+  content: " 0";
+  color: #cc6bcf;
+}
+
+#width {
+  color: #92dee1;
+  right: 26%;
+  animation-delay: 5s;
+}
+
+#width::after {
+  content: ": 235px";
+  color: #cc6bcf;
+}
+
+#html {
+  color: #e3e7f4;
+  left: 25%;
+  animation-delay: 1.2s;
+  rotate: -5deg;
+}
+
+#css {
+  animation-delay: 3s;
+  color: #92dee1;
+  right: 19%;
+  rotate: 35deg;
+}
+
+#js {
+  color: #cc6bcf;
+  right: 5%;
+  rotate: 3deg;
+  animation-delay: 1s;
+}
+
+@keyframes rain {
+  0% {
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+@media (max-width: 1450px) {
+  .raindrop {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .raindrop {
+    font-size: 12px;
+  }
+}
