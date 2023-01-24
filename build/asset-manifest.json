@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/My-works/static/css/main.2b530377.css",
+    "main.js": "/My-works/static/js/main.ae0b7746.js",
+    "static/media/man.gif": "/My-works/static/media/man.fab287ef4c02f8b54ad7.gif",
+    "static/media/noodles.png": "/My-works/static/media/noodles.da9b217c2226b417e451.png",
+    "static/media/SUPER-PC.jpg": "/My-works/static/media/SUPER-PC.4e8e41fd964a8988402e.jpg",
+    "static/media/to-do.png": "/My-works/static/media/to-do.5aaa5b243cfe2451b034.png",
+    "static/media/p2-back.jpg": "/My-works/static/media/p2-back.63566acea294ae951106.jpg",
+    "static/media/back.jpg": "/My-works/static/media/back.e26984a7ba2aebcd4c8f.jpg",
+    "static/media/tic-tac.jpg": "/My-works/static/media/tic-tac.695e3d275dcbafd7c71a.jpg",
+    "static/media/meme.jpg": "/My-works/static/media/meme.1d0f4e6b83959d0a8a38.jpg",
+    "static/media/p3-back.svg": "/My-works/static/media/p3-back.4a1c87e5c009962642d5.svg",
+    "static/media/p1-back.svg": "/My-works/static/media/p1-back.4e71d87d496742d6f18b.svg",
+    "index.html": "/My-works/index.html",
+    "main.2b530377.css.map": "/My-works/static/css/main.2b530377.css.map",
+    "main.ae0b7746.js.map": "/My-works/static/js/main.ae0b7746.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b530377.css",
+    "static/js/main.ae0b7746.js"
+  ]
+}

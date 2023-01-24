@@ -46,7 +46,7 @@
 }
 
 .askme {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   width: 250px;
   height: 250px;
   display: flex;
@@ -76,7 +76,7 @@
   transition: 0.1s;
 }
 
-.dialogsWindow {
+.dialogWindow {
   position: absolute;
   width: 100%;
   height: 20%;
@@ -84,10 +84,18 @@
   bottom: 0px;
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
-.dialogsWindow::before {
-  width: 10%;
+.dialogBlock {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  background-color: #232424d0;
+}
+
+.dialogBlock::before {
+  width: 15%;
   height: 100%;
   background: rgb(35, 36, 36);
   background: linear-gradient(
@@ -95,16 +103,15 @@
     rgba(35, 36, 36, 0.8295693277310925) 0%,
     rgba(0, 0, 0, 0) 100%
   );
-  left: 0px;
+  left: -15%;
   position: absolute;
   content: "";
 }
 
-.dialogsWindow::after {
-  width: 10%;
+.dialogBlock::after {
+  width: 15%;
   height: 100%;
-  background-color: red;
-  right: 0px;
+  right: -15%;
   position: absolute;
   content: "";
   background: rgb(35, 36, 36);
@@ -129,14 +136,17 @@
   background-size: cover;
 }
 
+#textWrapper {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+}
+
 .text {
   color: #e3e7f4;
   font-size: 18px;
-  height: 100%;
-  width: 80%;
   position: absolute;
-  background-color: #232424d0;
-  padding-top: 10px;
 }
 
 .meme {
@@ -160,23 +170,25 @@
   .text {
     font-size: 14px;
   }
-  .character {
-    height: 700px;
-  }
 }
 
 @media (max-width: 768px) {
   .mainWindow {
     height: 70%;
   }
-  .dialogsWindow {
-    height: 30%;
+
+  .dialogBlock {
+    height: 100%;
+    width: 100%;
   }
-  .dialogsWindow::before {
-    background: none;
+  .dialogBlock::before {
+    display: none;
   }
-  .dialogsWindow::after {
-    background: none;
+  .dialogBlock::after {
+    display: none;
+  }
+  .askme {
+    margin-bottom: 35px;
   }
   .askBtn {
     width: 200px;
@@ -193,8 +205,16 @@
     background-size: contain;
     left: 2px;
   }
-  .text {
+  #textWrapper {
     width: 100%;
-    padding: 0px;
+  }
+  .character {
+    max-height: 90%;
+  }
+}
+
+@media (max-width: 370px) {
+  .text {
+    font-size: 13px;
   }
 }

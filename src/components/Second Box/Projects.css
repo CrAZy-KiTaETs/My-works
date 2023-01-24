@@ -36,6 +36,7 @@
   padding: 0;
   border: 1px solid white;
   overflow: hidden;
+  box-shadow: 0 0 10px 2px black;
 }
 
 .projectImg {
@@ -56,10 +57,8 @@
 
 #project1 {
   background-image: url(../images/p1-back.svg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
-  background-color: #250448;
+  background-position: center;
+  background-size: cover;
 }
 
 #project2 {
@@ -72,7 +71,6 @@
   background-image: url(../images/p3-back.svg);
   background-position: center;
   background-size: cover;
-  background-color: #0a0025;
 }
 
 .textWrapper {
